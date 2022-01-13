@@ -1,0 +1,18 @@
+---
+label: P.O.I template
+hide_body: false
+fields:
+- type: textarea
+  name: link
+  label: link
+- type: file
+  name: thumb
+  label: thumb
+  description: 'Image size: 1360px X 900px'
+- type: text
+  name: tag
+  label: tag
+pages:
+- src/pois/agueda.md
+- src/pois/arealva.md
+- src/pois/monte-palace.md

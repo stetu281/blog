@@ -1,0 +1,83 @@
+.poicard {
+    margin-bottom: 50px;
+    box-shadow: 0 10px 20px 2px $bg-light;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $white;
+    z-index: 5;
+    
+    &__container {
+        padding: 1.5rem 2rem 2rem 2rem;
+        background-color: $white;
+        z-index: 10;
+    }
+
+    &__text {
+
+        h2 {
+            font-size: 1.5rem;
+            font-family: $roboto;
+            color: $primary;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+    }
+
+    &__footer {
+        margin-top: 20px;
+        border-top: 1px solid $bg-light;
+    }
+
+    &__share {
+        @include flex;
+        margin-top: 20px;
+    }
+
+    &__icon {
+        margin: 0 5px;
+        width: 20px;
+        align-self: flex-end;
+        fill: $font-color;
+        transition: fill .2s;
+
+        &:hover {
+            cursor: pointer;
+            fill: $primary;
+        }
+    }
+
+    &__link {
+        padding: 0.5rem 2rem;
+        display: block;
+        background-color: $white;
+        border: 2px solid $primary;
+        color: $primary;
+        text-align: center;
+        text-transform: uppercase;
+        transition: all .2s;
+
+        &:hover {
+            background-color: $primary;
+            color: $white;
+        }
+    }
+
+    @include tablet {
+        width: 49%;
+        &:nth-child(2n + 1) {
+            margin-right: 1%;
+        }
+    }
+
+    @include desktop {
+        width: 32%;
+        &:nth-child(2n + 1) {
+            margin-right: unset;
+        }
+    }
+}

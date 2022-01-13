@@ -1,0 +1,36 @@
+.hero {
+
+    &__content {
+        @include content;
+        padding-bottom: 40px;
+    }
+
+    &__title {
+        margin: 150px auto 0 auto;
+        max-width: 750px;
+        position: relative;
+        font-size: 2rem;
+        text-align: center;
+        z-index: 10;
+    }
+
+    &__img {
+        margin-top: -40px;
+    }
+
+    &__text {
+        margin: 20px auto 0 auto;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    @include tablet {
+        &__title {
+            font-size: 3.75rem;
+        }
+
+        &__img {
+            margin-top: -90px;
+        }
+    }
+}

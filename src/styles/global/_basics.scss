@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    font-size: $font-base;
+    position: relative;
+}
+
+main {
+    margin-top: 65px;
+}
+
+button {
+    font-size: 1rem;
+    font-family: $roboto;
+}
+
+.not-found {
+    @include content;
+    @include flex;
+    min-height: 100vh;
+
+    &__text {
+        font-size: 4rem;
+        font-family: $roboto;
+        color: $primary;
+        text-align: center;        
+    }
+}

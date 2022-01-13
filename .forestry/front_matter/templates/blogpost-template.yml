@@ -1,0 +1,33 @@
+---
+label: Blogpost template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: tags
+  label: tags
+- type: text
+  name: slug
+  label: slug
+  description: Leerzeichen mit - ersetzen und alles klein schreiben (z.b surfen-in-nazare)
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: dateprint
+  label: dateprint
+  description: Geschriebenes Datum wie es im Artikel erscheinen soll (z.b 22. Januar
+    2020)
+- type: text
+  name: author
+  label: author
+- type: file
+  name: thumb
+  label: thumb
+  description: 'Image Size: 1000px X 666px'
+- type: file
+  name: featuredImg
+  label: featuredImg
+  description: 'Image size: 2400px X 1022px (height optional)'

@@ -1,0 +1,80 @@
+.postpre {
+    background-color: $white;
+
+    &__content {
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+
+    &__tags {
+        color: $primary;
+        font-size: $font-xs;
+        text-align: center;
+        text-transform: uppercase; 
+    }
+
+    &__title {
+        font-family: $roboto;
+        font-size: 1.5rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin: 15px auto 0 auto;
+        max-width: 350px;
+        text-align: center;
+    }
+
+    &__link {
+        margin: 30px auto 0 auto;
+        padding: 0.5rem 2rem;
+        width: 70%;
+        max-width: 220px;
+        border: 1px solid $primary;
+        text-transform: uppercase;
+        color: $primary;
+        display: block;
+        text-align: center;
+        transition: all .2s;
+
+        &:hover {
+            background-color: $primary;
+            color: $white;
+        }
+    }
+
+    &__footer {
+        @include flex;
+        flex-direction: column;
+        margin-top: 30px;
+        border-top: 1px solid $font-color;
+    }
+
+    &__by {
+        margin-top: 10px;
+        opacity: 0.7;
+        font-size: $font-xs;
+    }
+
+    &__orange {
+        color: $primary;
+        opacity: 1;
+    }
+
+    &__share {
+        @include flex;
+        margin-top: 20px;
+    }
+
+    &__icon {
+        margin: 0 5px;
+        width: 20px;
+        fill: rgba($font-color, 0.7);
+        transition: fill .2s;
+        &:hover {
+            cursor: pointer;
+            fill: $primary;
+        }
+    }
+}

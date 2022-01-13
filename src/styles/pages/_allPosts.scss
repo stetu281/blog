@@ -1,0 +1,39 @@
+.allposts {
+
+    &__container {
+        margin-top: -30%;
+        background-color: $bg-light;
+        padding: 50px 0;
+        position: relative;
+    }
+
+    &__content {
+        @include content;
+        @include flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    &__card {
+        margin-bottom: 50px;
+        max-width: 500px;
+    }
+
+    @include tablet {
+        &__card {
+            width: 49%;
+        }
+    }
+
+    @include desktop {
+        &__container {
+            margin-top: -15%;
+        }
+
+        &__card {
+            width: 32%;
+        }
+    }
+
+}
